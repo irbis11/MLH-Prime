@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <title>T.U.N.E</title>
+         <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+         <link rel="stylesheet" href="./public/css/home.css">
+         <link href="https://fonts.googleapis.com/css?family=Raleway+Roboto" rel="stylesheet">
+         <link rel="icon" type="image/ico"  href="./favicon.ico" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+         <script src="./public/js/bootstrap.min.js"></script>
+         <script src="webaudio.js"></script>
+         <script src="socket.io/socket.io.js"></script>
+         <script src="eventhandlers.js"></script>
+     </head>
+     <body>
+        <div class="wrapper">
+                <div class="row">
+                  <div class="title">
+                      <div class="col-md-12">
+                          <h1 class="titleText">T.U.N.E.: Totally Underrated Noise Emitter</h1>
+                      </div>
+                  </div>
+                </div>
+                <div class="formContainer">
+                    <div class="row">
+                        <div class="col-md-12">
+                              <h4>Connect to a room</h4>
+                          </div>
+                     </div>
+                <br/>
+                <div class="bottomForm">
+                  <div class="row">          
+                          <input type="text" id="roomId" placeholder="Enter room name"></input><br>
+                          <button class="btn btn-success connectButton" type="button">GO</button>
+                      </div>
+                    </div>
+                  </div>
+                <br/>
+            </div>
+     </body>
+ </html>

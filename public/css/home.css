@@ -1,0 +1,219 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0E0E0;
+    color: white;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titleText
+{
+    background-color: #2196F3;
+    margin: 0;
+    padding: 2%;
+    font-size: 3.7em;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.5);
+    color: #ffffff;
+}
+
+.formContainer
+{
+    width: 50%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #2196F3;
+    background-color: #2196F3;
+    border-radius: 5px;
+    padding: 3% 1% 4% 1%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.formContainer h4
+{
+    margin-bottom: 5%;
+    top: 0;
+    font-size: 2.1em;
+}
+
+input[type=text]
+{
+   transition: all 350ms ease-in-out;
+   color: black;
+}
+
+input[type=text]:focus
+{
+    border: 2px solid black;
+}
+
+.bottomForm
+{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomForm input
+{
+    margin-bottom: 5%;
+    width: 20vw;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5px;
+    border: 0;
+    color: #000000;
+    padding: 10px;
+    min-width: 100px;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,.5);
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,.5);
+}
+
+h3, h2, label {
+    color: #000000;
+    display: inline;
+}
+
+#roomTitle {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.nowplaying {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.listLabel, .songList {
+    color: black;
+    margin-right: 16px;
+}
+
+#clock {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
+
+#center {
+    position: absolute;
+    top: 1.75em;
+    width: 100%;
+    text-align: center;
+    font-size: 16em;
+    text-shadow: 0px 0px 1em #81D4FA, 0px 0px 1em #81D4FA, 0px 0px 1em #81D4FA;
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+}
+
+#pianoCenter {
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    bottom: 0;
+    text-align: center;
+}
+
+#piano {
+    display: inline-block;
+    position: relative;
+    height: 168px;
+    background: #4D4D4D;
+    border-top: 2px solid #787878;
+    font-size: 0;
+}
+
+#piano > .key {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #FCFCFC;
+    width: 60px;
+    color: #212121;
+    margin-left: 1px;
+    margin-right: 1px;
+    transition: 0.1s all;
+}
+
+#piano > .sharp {
+    width: 45px;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    left: -22.5px;
+    background: #1E1E1E;
+    color: #FFFFFF;
+    height: 75%;
+    margin-bottom: 41.5px;
+    margin-left: 0px;
+    margin-right: -45px;
+}
+
+#piano > .key > .keycap {
+    position: absolute;
+    bottom: 16px;
+    font-size: 14px;
+    width: 100%;
+}
+
+#piano > .key > .keyshaft {
+    position: absolute;
+    bottom: 0;
+    background: #909090;
+    width: 100%;
+    height: 10px;
+    border-top: 2px solid #787878;
+}
+
+#piano > .sharp > .keyshaft {
+    position: absolute;
+    bottom: 0;
+    background: #2C2C2C;
+    width: 100%;
+    height: 10px;
+    border-top: 2px solid #3A3A3A;
+}
+
+#piano > .highlight {
+    background: #719ECA;
+}
+
+#piano > .highlight > .keyshaft {
+    display: none;
+}
+
+#room
+{
+    position: absolute;
+    bottom: 42px;
+    left: 16px;
+}
